@@ -7,7 +7,7 @@ const sosad_cookie = tokens.sosad_cookie;
 
 const header = {
   headers: {
-    Referer: "https://sosad.fun",
+    Referer: "https://www.sosad.fun",
     Host: "sosad.fun",
     "user-agent":
       "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36",
@@ -42,7 +42,7 @@ function teleMsg(msg) {
 
 return new Promise(async (resolve) => {
   try {
-    let url = `https://sosad.fun/qiandao`;
+    let url = `https://www.sosad.fun/qiandao`;
     let res = await axios.get(url, header);
     if (res.status == 200) {
       console.log(`The requested url: ${res.config.url}`);
