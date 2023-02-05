@@ -6,7 +6,7 @@ const chatID = tokens.chatID;
 const sosad_cookie = tokens.sosad_cookie;
 
 const sosad = got.extend({
-  prefixUrl: "https://sosad.fun/",
+  prefixUrl: "https://www.sosad.fun/",
   // responseType: 'json',
   headers: {
     Cookie: sosad_cookie,
