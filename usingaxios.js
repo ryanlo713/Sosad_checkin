@@ -3,15 +3,15 @@ const tokens = require("./helper/token");
 
 const botToken = tokens.botToken;
 const chatID = tokens.chatID;
-const sosad_session = tokens.sosad_session;
+const sosad_cookie = tokens.sosad_cookie;
 
 const header = {
   headers: {
-    Referer: "https://www.sosad.fun",
-    Host: "www.sosad.fun",
+    Referer: "https://sosad.fun",
+    Host: "sosad.fun",
     "user-agent":
       "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36",
-    cookie: `'${sosad_session}'`,
+    cookie: `'${sosad_cookie}'`,
   },
 };
 
@@ -42,7 +42,7 @@ function teleMsg(msg) {
 
 return new Promise(async (resolve) => {
   try {
-    let url = `https://www.sosad.fun/qiandao`;
+    let url = `https://sosad.fun/qiandao`;
     let res = await axios.get(url, header);
     if (res.status == 200) {
       console.log(`The requested url: ${res.config.url}`);
