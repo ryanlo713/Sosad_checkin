@@ -24,4 +24,4 @@ jobs:
         env:
           botToken: ${{ secrets.botToken }}
           chatID: ${{ secrets.chatID }}
-          sosad_cookie: ${{ secrets.sosad_cookie }}
+          sosad_cookie: ${{ secrets.sosad_session }}
