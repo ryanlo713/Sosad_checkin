@@ -3,7 +3,7 @@ const tokens = require("./helper/token");
 
 const botToken = tokens.botToken;
 const chatID = tokens.chatID;
-const sosad_cookie = tokens.sosad_cookie;
+const sosad_cookie = tokens.sosad_session;
 
 const header = {
   headers: {
@@ -11,7 +11,7 @@ const header = {
     Host: "sosad.fun",
     "user-agent":
       "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36",
-    cookie: `'${sosad_cookie}'`,
+    cookie: `'${sosad_session}'`,
   },
 };
 
