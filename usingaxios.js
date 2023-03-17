@@ -3,7 +3,7 @@ const tokens = require("./helper/token");
 
 const botToken = tokens.botToken;
 const chatID = tokens.chatID;
-const sosad_cookie = tokens.sosad_session;
+const sosad_session = tokens.sosad_session;
 
 const header = {
   headers: {
