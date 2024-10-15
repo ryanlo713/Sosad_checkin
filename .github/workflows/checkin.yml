@@ -28,3 +28,19 @@ jobs:
           botToken: ${{ secrets.botToken }}
           chatID: ${{ secrets.chatID }}
           sosad_cookie: ${{ secrets.sosad_cookie }}
+    # https://p3terx.com/archives/github-actions-manual-trigger.html
+      - uses: actions/checkout@v4
+
+      - name: Update anime list
+        uses: ycs77/readme-anime-list@main
+        with:
+          target: 'README.md'
+          template: 'template/README-eta.md'
+          bangumi_username: 'ryanlo713'
+          bangumi_limit: 10
+          user_agent: 'ryanlo713/Sosad_checkin README'
+
+      - name: Commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Update generated README'
